@@ -63,10 +63,10 @@ const setFavicon = dataURL => {
   })
 }
 
-addEventListener('blur', () => {
+const set = () => {
   setFavicon(data.desaturated)
-})
+}
 
-addEventListener('focus', () => {
-  setFavicon(data.desaturated)
-})
+addEventListener('blur', set)
+addEventListener('focus', set)
+addEventListener('load', set, false)
