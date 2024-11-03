@@ -1,0 +1,1 @@
+Chrome Grayscale Favicons
